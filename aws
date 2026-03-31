@@ -1,0 +1,60 @@
+Category 1: Infrastructure as Code (Terraform & AWS)
+How do you structure your Terraform code for a multi-environment (Dev/Staging/Prod) setup on AWS? (p. 2)
+Explain the process of migrating a manually created EC2 instance into Terraform management.
+How do you handle Terraform state files securely for a team? Have you used S3 backends with DynamoDB locking? (p. 2)
+What is the difference between terraform plan and terraform apply in a CI/CD context? (p. 1)
+Hands-on: Write a Terraform snippet to create a VPC with one public and one private subnet. (p. 2)
+How do you handle sensitive data (like DB passwords) in Terraform without hardcoding them? (p. 2)
+Explain how you use Terraform modules to maintain DRY (Don't Repeat Yourself) principles. (p. 2)
+What happens if someone manually deletes an S3 bucket managed by Terraform? How do you fix it? (p. 2)
+How do you implement "Least Privilege" using IAM via Terraform? (p. 2)
+Describe a time a terraform apply failed in production. How did you perform the RCA? (p. 2)
+------------------------------------------------------------------------------------------------------------------------------
+
+Category 2: Compute & Networking (EC2, VPC, ELB)
+How do you choose between a Network Load Balancer (NLB) and an Application Load Balancer (ALB)? (p. 2)
+Scenario: Your EC2 instance in a private subnet needs to download a security patch. How do you enable this? (p. 2)
+What is the difference between a Security Group and a Network ACL (NACL)? (p. 1)
+How do you configure an Auto Scaling Group (ASG) to handle sudden traffic spikes? (p. 2)
+Explain the concept of "Target Groups" in the context of AWS Load Balancers. (p. 2)
+How do you ensure high availability across multiple Availability Zones (AZs) for your web application? (p. 2)
+Hands-on: How do you SSH into an EC2 instance sitting in a private subnet?
+What are "Launch Templates" and why are they preferred over "Launch Configurations"? (p. 2)
+How do you monitor EC2 health beyond just "Status Checks"? (p. 2)
+Explain the use case for VPC Peering vs. AWS Transit Gateway. (p. 1)
+------------------------------------------------------------------------------------------------------------------------------
+Category 3: Kubernetes on AWS (EKS)
+How do you manage IAM roles for Kubernetes Service Accounts (IRSA) in EKS? (p. 2)
+What is the difference between Fargate and Managed Node Groups in EKS? (p. 2)
+Scenario: Your EKS pods are failing to pull images from ECR. What are the first three things you check? (p. 1)
+How do you implement RBAC in EKS to restrict developer access to specific namespaces? (p. 2)
+Explain the role of the aws-auth ConfigMap in an EKS cluster. (p. 2)
+How do you handle persistent storage for stateful applications in EKS (EBS vs. EFS)? (p. 2)
+Hands-on: Describe the steps to upgrade an EKS cluster version with zero downtime. (p. 1)
+How do you expose an application running in EKS to the internet using the AWS Load Balancer Controller? (p. 2)
+What are "Taints" and "Tolerations," and how have you used them in your AWS clusters? (p. 1)
+How do you monitor EKS cluster performance using CloudWatch or Prometheus? (pp. 1-2)
+------------------------------------------------------------------------------------------------------------------------------
+Category 4: Storage & Security
+How do you prevent accidental deletion of objects in an S3 bucket? (p. 2)
+Explain S3 bucket policies vs. IAM policies. When do you use which? (p. 2)
+How do you automate backups for your AWS infrastructure? (p. 2)
+What is AWS KMS, and how does it integrate with EBS and S3? (p. 2)
+Scenario: You need to share a large file in S3 with an external user for 2 hours. How do you do it safely?
+How do you implement "Encryption at Rest" for your RDS databases? (p. 2)
+Explain the "Shared Responsibility Model" in AWS.
+How do you use AWS Secrets Manager to rotate database credentials automatically? (p. 2)
+What is an IAM "Role Assumption," and why is it better than using Access Keys? (p. 2)
+How do you audit who made changes to your AWS environment (CloudTrail)? (p. 2)
+------------------------------------------------------------------------------------------------------------------------------
+Category 5: CI/CD, Monitoring & Disaster Recovery
+How do you integrate AWS CloudWatch alerts with Slack or PagerDuty for production incidents? (p. 2)
+Describe your "Blue-Green" deployment strategy using AWS Route53 or ALBs. (p. 2)
+How do you optimize AWS costs? Mention tools or strategies you've used (e.g., Spot instances). (p. 2)
+Hands-on: How do you automate the cleanup of old EBS snapshots or ECR images? (pp. 1-2)
+What is your strategy for "Disaster Recovery" in a multi-region AWS setup? (p. 2)
+How do you use Jenkins to trigger a Terraform deployment to AWS? (p. 2)
+Explain "Rolling Updates" in the context of an AWS Auto Scaling Group. (p. 2)
+How do you centralize logs from multiple EC2 instances into CloudWatch Logs? (p. 2)
+Scenario: A developer says the "Site is slow." Walk me through your AWS troubleshooting steps. (p. 2)
+How do you ensure your AWS infrastructure stays compliant with security standards (e.g., AWS Config)? (p. 2)
