@@ -14,6 +14,8 @@ Describe a time a terraform apply failed in production. How did you perform the 
 Category 2: Compute & Networking (EC2, VPC, ELB)
 How do you choose between a Network Load Balancer (NLB) and an Application Load Balancer (ALB)? (p. 2)
 
+ANSWER
+------
         🚦 ALB vs NLB – How to Choose?
         🧠 Interview-Ready Answer
 
@@ -33,9 +35,25 @@ How do you choose between a Network Load Balancer (NLB) and an Application Load 
 
 
 Scenario: Your EC2 instance in a private subnet needs to download a security patch. How do you enable this? (p. 2)
+ANSWER
+------
+        “Since the EC2 instance is in a private subnet, it cannot access the internet directly. To allow it to download a security patch, I would configure a NAT Gateway or NAT Instance in a public subnet and route outbound traffic through it.
+
 What is the difference between a Security Group and a Network ACL (NACL)? (p. 1)
+ANSWER
+------
+    Security Groups and Network ACLs both control traffic in AWS, but the key difference is that Security Groups are stateful and instance-level, while NACLs are stateless and subnet-level
+
+
 How do you configure an Auto Scaling Group (ASG) to handle sudden traffic spikes? (p. 2)
+ANSWER
+------
+    To handle sudden traffic spikes, I configure an Auto Scaling Group with dynamic scaling policies, proper health checks, and integrate it with a Load Balancer to automatically scale out and in based on demand.
+
 Explain the concept of "Target Groups" in the context of AWS Load Balancers. (p. 2)
+ANSWER
+------
+    
 How do you ensure high availability across multiple Availability Zones (AZs) for your web application? (p. 2)
 Hands-on: How do you SSH into an EC2 instance sitting in a private subnet?
 What are "Launch Templates" and why are they preferred over "Launch Configurations"? (p. 2)
