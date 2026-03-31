@@ -13,6 +13,25 @@ Describe a time a terraform apply failed in production. How did you perform the 
 
 Category 2: Compute & Networking (EC2, VPC, ELB)
 How do you choose between a Network Load Balancer (NLB) and an Application Load Balancer (ALB)? (p. 2)
+
+        🚦 ALB vs NLB – How to Choose?
+        🧠 Interview-Ready Answer
+
+        👉 “I choose between Application Load Balancer (ALB) and Network Load Balancer (NLB) based on the application layer and requirements.”
+
+        If I need content-based routing, HTTP/HTTPS, microservices → I use ALB
+        If I need ultra-high performance, low latency, TCP/UDP → I use NLB
+        | Feature     | ALB                    | NLB                    |
+        | ----------- | ---------------------- | ---------------------- |
+        | Layer       | Layer 7 (Application)  | Layer 4 (Transport)    |
+        | Protocols   | HTTP, HTTPS            | TCP, UDP               |
+        | Routing     | Path-based, host-based | IP + Port only         |
+        | Performance | Moderate               | Very high              |
+        | Latency     | Slightly higher        | Ultra-low              |
+        | Use Case    | Web apps, APIs         | Real-time apps, gaming |
+
+
+
 Scenario: Your EC2 instance in a private subnet needs to download a security patch. How do you enable this? (p. 2)
 What is the difference between a Security Group and a Network ACL (NACL)? (p. 1)
 How do you configure an Auto Scaling Group (ASG) to handle sudden traffic spikes? (p. 2)
